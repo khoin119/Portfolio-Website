@@ -1,0 +1,121 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: rgb(123, 123, 123);
+}
+
+
+.content {
+    text-align: center;
+}
+
+
+.button {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.button img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: filter 0.3s ease-in-out;
+}
+
+.projects-links {
+    color: black;
+    text-decoration: none;
+
+}
+
+section {
+    padding: 50px;
+    border-top: 1px solid #3f3f3f;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section h2 {
+    text-align: center;
+}
+
+section p {
+    max-width: 800px;
+    margin: 5px;
+    word-wrap: break-word;
+    text-align: justify;
+    font-size: 17px
+    
+}
+
+#projects b{
+    word-spacing: -6px; 
+}
+#projects p{
+    word-spacing: -3px; 
+}
+
+.profile {
+    border-radius: 7000px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+  }
+  
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.column p {
+    font-size: 17px;
+}
+
+.column img {
+    width: 100%; 
+    height: auto;
+    border-radius: 10px;
+
+}
+
+.location-container {
+    display: flex;
+    align-items: center;
+}
+
+#location {
+    padding-bottom: 15x;
+    padding-right: 40px;
+    width: 55px;
+    height: 55px;
+}
+
