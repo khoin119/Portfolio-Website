@@ -1,38 +1,46 @@
 body {
     font-family: 'Courier New', Courier, monospace;
-
 }
-
 
 h1 {
     text-align: center;
     font-size: 35px;
 }
 
+
 nav {
     text-align: center;
     margin-bottom: 20px;
     padding-left: 20px;
-    
 }
 
 nav a {
     margin: 0 15px;
+    display: inline-block;
     text-decoration: none;
     font-size: 18px;
     color: black;
-    text-align: center;
-    
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: none;
     color: rgb(123, 123, 123);
+    transform: scale(1.1);
 }
 
 
 .content {
     text-align: center;
+}
+
+
+.profile {
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.profile:hover {
+    transform: scale(1.1);
 }
 
 
@@ -46,14 +54,38 @@ nav a:hover {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    transition: filter 0.3s ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+.button img:hover {
+    transform: scale(1.1);
 }
 
 .projects-links {
+    display: inline-block;
     color: black;
     text-decoration: none;
-
+    transition: transform 0.3s ease;
 }
+
+.projects-links:hover {
+    color: rgb(123, 123, 123);
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+#projects b {
+    display: block;
+    margin-bottom: 5px; 
+}
+
+
+#projects p {
+    line-height: 1.4;
+    margin-bottom: 10px;
+    word-spacing: -3px;
+}
+
 
 section {
     padding: 50px;
@@ -68,32 +100,22 @@ section h2 {
 
 section p {
     max-width: 800px;
-    margin: 5px;
+    margin: 5px 0;
     word-wrap: break-word;
     text-align: justify;
-    font-size: 17px
-    
+    font-size: 17px;
 }
 
-#projects b{
-    word-spacing: -6px; 
-}
-#projects p{
-    word-spacing: -3px; 
-}
-
-.profile {
-    border-radius: 7000px;
-}
 
 .row {
     display: flex;
     justify-content: center;
-  }
-  
+    flex-wrap: wrap;
+}
+
 .column {
-    flex: 33.33%;
-    padding: 5px;
+    flex: 1 1 30%;
+    padding: 10px;
 }
 
 .column p {
@@ -101,11 +123,16 @@ section p {
 }
 
 .column img {
-    width: 100%; 
+    width: 100%;
     height: auto;
     border-radius: 10px;
-
+    transition: transform 0.3s ease;
 }
+
+.column img:hover {
+    transform: scale(1);
+}
+
 
 .location-container {
     display: flex;
@@ -113,9 +140,8 @@ section p {
 }
 
 #location {
-    padding-bottom: 15x;
+    padding-bottom: 15px;
     padding-right: 40px;
     width: 55px;
     height: 55px;
 }
-
